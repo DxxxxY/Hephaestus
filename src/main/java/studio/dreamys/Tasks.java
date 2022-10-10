@@ -388,6 +388,14 @@ public class Tasks {
 
             ok("Changed modid.");
 
+            log("Removing source...");
+
+            //remove source
+            cn.sourceFile = null;
+            cn.sourceDebug = null;
+
+            ok("Removed source.");
+
             log("Saving as jar...");
 
             log("Do you wish to insert this class into another jar? [y/n]");
